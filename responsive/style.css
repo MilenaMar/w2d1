@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* .firstExample {
+  background-color: orange;
+  height: 50px;
+  color: white;
+  text-align: center;
+}
+
+@media (min-width: 1000px) {
+  .firstExample {
+    background-color: blue;
+    height: 100vh;
+    color: green;
+  }
+}
+
+@media (max-width: 768px) {
+  .firstExample {
+    background-color: red;
+  }
+} */
+
+/* body {
+  min-height: 100vh;
+} */
+
+body {
+  background-color: hotpink;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 25px;
+  /* background-color: words / #c6c6c6, rgb(155, 155, 155), rgba(155,155,155, 0.5) */
+  background-color: #c3c3c3;
+  color: white;
+}
+
+nav a {
+  color: white;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+}
+
+li {
+  list-style-type: none;
+}
+
+header {
+  background-color: greenyellow;
+  /* height: 100%; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-grow: 1;
+}
+
+header div {
+  width: 40%;
+}
+
+h1 {
+  text-align: center;
+}
+
+header div button {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+a {
+  text-decoration: none;
+  /* color: black; */
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: yellow;
+}
+
+footer section {
+  width: 30%;
+}
+
+@media (max-width: 700px) {
+  ul {
+    display: none;
+  }
+
+  nav {
+    justify-content: center;
+  }
+
+  .logo {
+    font-size: 1.7em;
+  }
+
+  header {
+    flex-direction: column;
+    height: 40vh;
+  }
+}
+
+/* 
+% , ems and rems are always going to be considered relative values
+% is relative to the parents container
+em -> always relative to the parent container font-size
+rem -> always going to be relative to "root" font size
+*/
